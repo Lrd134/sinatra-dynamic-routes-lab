@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+</head>
+<body>
+<% case @operation %>
+<% when "add" %>
+    <%= @number1 + @number2 %>
+<% when "subtract" %>
+    <%= @number1 - @number2%>
+<% when "multiply" %>
+    <%= @number1 * @number2%>
+<% when "divide" %>
+    <%= @number1 / @number2 %>
+<% else %>
+    <%= "No valid operation found." %>
+<% end %>
+</body>
+</html>
